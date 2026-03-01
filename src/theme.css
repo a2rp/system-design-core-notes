@@ -1,0 +1,73 @@
+/* theme.css */
+/* System Design Core Notes Theme */
+
+:root {
+    /* Base - deep architectural slate */
+    --color-bg: #07080c;
+    --color-surface: #0f121a;
+    --color-surface-2: #151a26;
+
+    /* Primary Accent - blueprint cyan */
+    --color-primary: #22d3ee;
+    --color-primary-hover: #67e8f9;
+
+    /* Secondary Accent - latency violet */
+    --color-accent: #a78bfa;
+
+    /* Text */
+    --color-text-primary: #f5f7ff;
+    --color-text-secondary: #cbd5e1;
+    --color-text-muted: #94a3b8;
+
+    /* Borders */
+    --color-border: #222a3a;
+    --color-border-light: #2f3a55;
+
+    /* Links */
+    --color-link: #22d3ee;
+    --color-link-hover: #67e8f9;
+
+    /* States */
+    --color-success: #22c55e;
+    --color-error: #ef4444;
+    --color-warning: #f59e0b;
+
+    /* Code blocks */
+    --color-code-bg: #0b0f1a;
+    --color-code-border: #253049;
+
+    /* Shadow */
+    --color-shadow: rgba(0, 0, 0, 0.78);
+}
+
+/* Light Mode */
+
+html[data-theme="light"] {
+    --color-bg: #ffffff;
+    --color-surface: #f6f8ff;
+    --color-surface-2: #eef2ff;
+
+    --color-primary: #0891b2;
+    --color-primary-hover: #0e7490;
+
+    --color-accent: #7c3aed;
+
+    --color-text-primary: #0b1220;
+    --color-text-secondary: #334155;
+    --color-text-muted: #64748b;
+
+    --color-border: #e2e8f0;
+    --color-border-light: #cbd5e1;
+
+    --color-link: #0891b2;
+    --color-link-hover: #0e7490;
+
+    --color-success: #16a34a;
+    --color-error: #dc2626;
+    --color-warning: #d97706;
+
+    --color-code-bg: #f1f5ff;
+    --color-code-border: #e2e8f0;
+
+    --color-shadow: rgba(15, 23, 42, 0.08);
+}
