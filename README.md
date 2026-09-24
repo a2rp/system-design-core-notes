@@ -1,231 +1,54 @@
 # System Design Core Notes
 
-A single-page, at-a-glance revision project for core System Design concepts.
+A structured React reference for revising system design fundamentals, architecture patterns, scalability, reliability, distributed systems, and interview tradeoffs.
 
-This project is designed as a fast reference and structured summary sheet covering essential system architecture topics without unnecessary depth.  
-It focuses on clarity, scalability thinking, tradeoff analysis, distributed systems behavior, and interview-ready fundamentals.
+## Features
 
----
+- Single-page topic flow for fast revision
+- Coverage of architecture, scaling, load balancing, caching, databases, storage, APIs, messaging, security, and observability
+- Dark and light themes with local preference storage
+- Responsive layout with readable topic sections
+- Local assets and GitHub Pages deployment
 
-![alt text](image.png)
+## Tech stack
 
----
+React, Vite, styled-components, and React Icons.
 
-## Purpose
+## Run locally
 
-- Quick revision before system design interviews
-- Rapid recall of architecture fundamentals
-- Clear mental model of scaling, reliability, and distributed systems
-- Practical, production-focused reminders
-- Strong foundation in databases, caching, load balancing, messaging, and high availability without overload
-
-## Coverage
-
-- What is System Design
-- Functional vs Non-functional requirements
-- Scalability
-- Reliability vs Availability
-- Latency vs Throughput
-- Consistency models
-- CAP theorem
-- ACID vs BASE
-
-- Architecture Basics
-    - Monolith
-    - Microservices
-    - Service-oriented architecture
-    - Client-server model
-    - Layered architecture
-    - Event-driven architecture
-
-- Scaling
-    - Vertical scaling
-    - Horizontal scaling
-    - Stateless vs Stateful services
-    - Bottlenecks
-    - Auto scaling
-
-- Load Balancing
-    - What is a load balancer
-    - Layer 4 vs Layer 7
-    - Round robin
-    - Least connections
-    - IP hash
-    - Health checks
-    - Reverse proxy
-
-- Caching
-    - Why caching is needed
-    - Cache-aside pattern
-    - Write-through
-    - Write-back
-    - Cache eviction policies
-        - LRU
-        - LFU
-        - FIFO
-    - Redis basics
-    - CDN concept
-
-- Databases in System Design
-    - SQL vs NoSQL
-    - Indexing impact
-    - Replication
-    - Read replicas
-    - Sharding
-    - Partitioning
-    - Distributed databases
-
-- Data Storage
-    - Object storage
-    - Blob storage
-    - Block storage
-    - File storage
-    - Data lakes vs Data warehouses
-
-- Messaging and Queues
-    - Why queues are needed
-    - Synchronous vs Asynchronous communication
-    - Message brokers
-    - Kafka basics
-    - RabbitMQ basics
-    - Pub-sub model
-    - Event streaming
-
-- API Design
-    - REST
-    - GraphQL overview
-    - gRPC basics
-    - Idempotency
-    - Rate limiting
-    - Pagination strategies
-
-- High Availability and Fault Tolerance
-    - Redundancy
-    - Failover
-    - Circuit breaker
-    - Retry pattern
-    - Backoff strategy
-    - Graceful degradation
-
-- Distributed Systems Concepts
-    - Distributed locks
-    - Leader election
-    - Consensus basics
-    - Raft overview
-    - Clock synchronization
-    - Eventual consistency
-
-- Security in System Design
-    - Authentication vs Authorization
-    - OAuth basics
-    - JWT
-    - TLS
-    - API gateway
-    - Secrets management
-    - DDoS mitigation
-
-- Monitoring and Observability
-    - Logging
-    - Metrics
-    - Tracing
-    - APM
-    - Alerting
-    - SLAs
-    - SLOs
-    - SLIs
-
-- Performance Optimization
-    - Connection pooling
-    - Compression
-    - Lazy loading
-    - Batch processing
-    - Database optimization basics
-
-- Design Patterns
-    - API gateway pattern
-    - Sidecar pattern
-    - Saga pattern
-    - CQRS
-    - Event sourcing
-    - Strangler pattern
-
-- Real-world Design Examples
-    - Design URL shortener
-    - Design Twitter
-    - Design WhatsApp
-    - Design YouTube
-    - Design E-commerce system
-    - Design Chat system
-
-- Estimation Techniques
-    - Traffic estimation
-    - Storage estimation
-    - Bandwidth calculation
-    - Capacity planning basics
-
-- Must-know interview questions and answers
-
-## Tech Stack
-
-- React
-- Vite
-- styled-components
-
-## Project Type
-
-Single page only  
-Section-based navigation  
-Searchable and expandable content  
-No blog-style content, only structured notes
-
-Each topic is modular and collapsible for fast scanning.
-
-## Run Locally
-
-```bash
+~~~
 npm install
 npm run dev
-```
+~~~
 
-## Goal
+## Deployment
 
-Complete core System Design knowledge in one scrollable page.
+Live site: [a2rp.github.io/system-design-core-notes](https://a2rp.github.io/system-design-core-notes/)
 
-No fluff.
-No repetition.
-Just architecture-level clarity.
+Build and deploy:
 
-## Links
+~~~
+npm run lint
+npm run build
+npm run deploy
+~~~
 
-- Portfolio: [https://www.ashishranjan.net](https://www.ashishranjan.net)
-- GitHub: [https://github.com/a2rp](https://github.com/a2rp)
-- CodePen: [https://codepen.io/ash1198](https://codepen.io/ash1198)
-- LinkedIn: [https://www.linkedin.com/in/aashishranjan](https://www.linkedin.com/in/aashishranjan)
-- Facebook: [https://www.facebook.com/theash.ashish/](https://www.facebook.com/theash.ashish/)
-- YouTube: [https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1](https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1)
-- Email: [ash.ranjan09@gmail.com](mailto:ash.ranjan09@gmail.com)
+## Screenshot
 
-## Support
-
-- Support: [https://a2rp-donation-page.netlify.app/](https://a2rp-donation-page.netlify.app/)
-- Buy Me A Coffee: [https://buymeacoffee.com/a2rp](https://buymeacoffee.com/a2rp)
-- Patreon: [https://patreon.com/a2rp](https://patreon.com/a2rp)
-<!-- Project links -->
+![System Design Core Notes](screenshot.png)
 
 ## Links
 
-- Live: [https://a2rp.github.io/system-design-core-notes/](https://a2rp.github.io/system-design-core-notes/)
-- Repository: [https://github.com/a2rp/system-design-core-notes](https://github.com/a2rp/system-design-core-notes)
-- Portfolio: [https://www.ashishranjan.net/](https://www.ashishranjan.net/)
-- GitHub: [https://github.com/a2rp](https://github.com/a2rp)
-- CodePen: [https://codepen.io/ash1198](https://codepen.io/ash1198)
-- LinkedIn: [https://www.linkedin.com/in/aashishranjan](https://www.linkedin.com/in/aashishranjan)
-- Facebook: [https://www.facebook.com/theash.ashish/](https://www.facebook.com/theash.ashish/)
-- YouTube: [https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1](https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1)
-- Email: [ash.ranjan09@gmail.com](mailto:ash.ranjan09@gmail.com)
+- [Portfolio](https://www.ashishranjan.net/)
+- [GitHub](https://github.com/a2rp)
+- [CodePen](https://codepen.io/ash1198)
+- [LinkedIn](https://www.linkedin.com/in/aashishranjan)
+- [Facebook](https://www.facebook.com/theash.ashish/)
+- [YouTube](https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1)
+- [Email](mailto:ash.ranjan09@gmail.com)
 
 ## Support
 
-- Support: [https://a2rp-donation-page.netlify.app/](https://a2rp-donation-page.netlify.app/)
-- Buy Me a Coffee: [https://buymeacoffee.com/a2rp](https://buymeacoffee.com/a2rp)
-- Patreon: [https://www.patreon.com/a2rp](https://www.patreon.com/a2rp)
+- [Support](https://a2rp-donation-page.netlify.app/)
+- [Buy Me a Coffee](https://buymeacoffee.com/a2rp)
+- [Patreon](https://patreon.com/a2rp)

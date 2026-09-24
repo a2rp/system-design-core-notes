@@ -1,26 +1,57 @@
-// components/footer/index.jsx
-import React from "react";
+import { createElement } from "react";
+import {
+    FiCode,
+    FiCoffee,
+    FiFacebook,
+    FiGithub,
+    FiGlobe,
+    FiHeart,
+    FiLinkedin,
+    FiMail,
+    FiYoutube,
+} from "react-icons/fi";
 import { Styled } from "./styled";
 
-const Footer = () => {
-    return (
-        <Styled.Wrapper>
-            <div className="left">
-                © {new Date().getFullYear()} | All rights reserved
-            </div>
+const links = [
+    ["Portfolio", "https://www.ashishranjan.net/", FiGlobe],
+    ["GitHub", "https://github.com/a2rp", FiGithub],
+    ["CodePen", "https://codepen.io/ash1198", FiCode],
+    ["LinkedIn", "https://www.linkedin.com/in/aashishranjan", FiLinkedin],
+    ["Facebook", "https://www.facebook.com/theash.ashish/", FiFacebook],
+    ["YouTube", "https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1", FiYoutube],
+    ["Support", "https://a2rp-donation-page.netlify.app/", FiHeart],
+    ["Buy Me a Coffee", "https://buymeacoffee.com/a2rp", FiCoffee],
+    ["Patreon", "https://patreon.com/a2rp", FiHeart],
+    ["Email", "mailto:ash.ranjan09@gmail.com", FiMail],
+];
 
-            <div className="right">
-                By&nbsp;
+const Footer = () => (
+    <Styled.Wrapper>
+        <div className="footerCopy">
+            Copyright &copy; {new Date().getFullYear()}{" "}
+            <a
+                href="https://www.ashishranjan.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Ashish Ranjan
+            </a>
+        </div>
+        <div className="footerLinks" aria-label="Social and support links">
+            {links.map(([label, href, Icon]) => (
                 <a
-                    href="https://www.ashishranjan.net"
+                    key={label}
+                    href={href}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={label}
+                    title={label}
                 >
-                    Ashish Ranjan
+                    {createElement(Icon, { "aria-hidden": true })}
                 </a>
-            </div>
-        </Styled.Wrapper>
-    );
-};
+            ))}
+        </div>
+    </Styled.Wrapper>
+);
 
 export default Footer;

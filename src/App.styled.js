@@ -11,7 +11,7 @@ export const Styled = {
     `,
     Header: styled.header`
         /* border: 1px solid #f00; */
-        height: 60px;
+        height: 64px;
         flex-shrink: 0;
     `,
     Main: styled.main`
