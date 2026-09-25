@@ -9,6 +9,7 @@ A structured React reference for revising system design fundamentals, architectu
 - Dark and light themes with local preference storage
 - Responsive layout with readable topic sections
 - Local assets and GitHub Pages deployment
+- Floating go-to-top control for the internal scroll area
 
 ## Tech stack
 

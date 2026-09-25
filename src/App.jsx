@@ -1,5 +1,5 @@
-// App.jsx
-import React from "react";
+import { useEffect, useRef, useState } from "react";
+import { FiArrowUp } from "react-icons/fi";
 import { Styled } from "./App.styled";
 import Header from "./components/header";
 import Footer from "./components/footer";
@@ -23,12 +23,31 @@ import RealWorldDesignExamples from "./topics/realWorldDesignExamples";
 import InterviewStrategy from "./topics/interviewStrategy";
 
 const App = () => {
+    const mainRef = useRef(null);
+    const [showGoTop, setShowGoTop] = useState(false);
+
+    useEffect(() => {
+        const mainElement = mainRef.current;
+        if (!mainElement) return undefined;
+
+        const handleScroll = () => setShowGoTop(mainElement.scrollTop > 360);
+
+        handleScroll();
+        mainElement.addEventListener("scroll", handleScroll, { passive: true });
+
+        return () => mainElement.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    const scrollToTop = () => {
+        mainRef.current?.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
     return (
         <Styled.Wrapper>
             <Styled.Header>
                 <Header />
             </Styled.Header>
-            <Styled.Main>
+            <Styled.Main ref={mainRef}>
                 <div className="contentWrapper">
                     <AboutSystemDesign />
 
@@ -55,6 +74,16 @@ const App = () => {
                     <Footer />
                 </div>
             </Styled.Main>
+            {showGoTop && (
+                <Styled.GoToTop
+                    type="button"
+                    onClick={scrollToTop}
+                    aria-label="Scroll to top"
+                    title="Scroll to top"
+                >
+                    <FiArrowUp aria-hidden="true" />
+                </Styled.GoToTop>
+            )}
         </Styled.Wrapper>
     );
 };
