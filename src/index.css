@@ -184,7 +184,7 @@ select option {
 /* Light theme option fallback */
 html[data-theme="light"] select option {
     background: #ffffff;
-    color: #0b1220;
+    color: #121212;
 }
 
 /* Hover */
@@ -243,7 +243,7 @@ hr {
 /* 11) Selection */
 ::selection {
     background: var(--color-primary);
-    color: #07080c;
+    color: #080808;
 }
 
 /* 12) Focus visibility */

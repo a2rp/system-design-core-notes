@@ -1,5 +1,7 @@
 # System Design Core Notes
 
+![System Design Core Notes preview](screenshot.png)
+
 A structured React reference for revising system design fundamentals, architecture patterns, scalability, reliability, distributed systems, and interview tradeoffs.
 
 ## Features
@@ -36,7 +38,6 @@ npm run deploy
 
 ## Screenshot
 
-![System Design Core Notes](screenshot.png)
 
 ## Links
 
