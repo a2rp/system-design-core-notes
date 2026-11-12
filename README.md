@@ -38,6 +38,7 @@ npm run deploy
 
 ## Screenshot
 
+![System Design Core Notes screenshot](screenshot.png)
 
 ## Links
 
